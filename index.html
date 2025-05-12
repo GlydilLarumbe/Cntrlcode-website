@@ -1,85 +1,49 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>cntrlcode.pro - Professional Websites</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <title>cntrlcode.pro</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body class="bg-white text-gray-800 font-sans">
-  <header class="bg-black text-white p-6 shadow-md">
-    <div class="container mx-auto flex justify-between items-center">
-      <h1 class="text-2xl font-bold">cntrlcode.pro</h1>
-      <a href="#contact" class="bg-white text-black px-4 py-2 rounded-xl hover:bg-gray-200">Get a Free Quote</a>
-    </div>
-  </header>
-  <section class="bg-gray-100 text-center py-20 px-6">
-    <h2 class="text-4xl font-bold mb-4">Professional Websites, Built Fast and Right</h2>
-    <p class="text-lg mb-6 max-w-2xl mx-auto">
-      We help small businesses and startups launch high-performing, custom websites—frontend, backend, and everything in between.
-    </p>
-    <a href="#contact" class="bg-black text-white px-6 py-3 rounded-xl text-lg hover:bg-gray-800">Request a Quote</a>
-  </section>
-  <section class="py-16 px-6">
-    <div class="max-w-4xl mx-auto text-center">
-      <h3 class="text-3xl font-bold mb-6">What We Do</h3>
-      <p class="mb-4">Custom Websites. No Hassle. Just Results.</p>
-      <ul class="text-left list-disc list-inside">
-        <li>Mobile-friendly, SEO-ready websites</li>
-        <li>Full-stack web development (frontend & backend)</li>
-        <li>Admin dashboards, booking systems, and more</li>
-        <li>Landing pages for marketing or products</li>
+<body>
+  <header>
+    <nav class="navbar container">
+      <h1>cntrlcode.pro</h1>
+      <ul>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#subscribe">Subscribe</a></li>
       </ul>
-    </div>
+    </nav>
+  </header>
+
+  <section class="hero container">
+    <h2>Build Smarter, Faster Websites</h2>
+    <p>We create professional websites and custom solutions for your business.</p>
   </section>
-  <section class="bg-gray-100 py-16 px-6">
-    <div class="max-w-4xl mx-auto text-center">
-      <h3 class="text-3xl font-bold mb-6">Why Choose cntrlcode.pro?</h3>
-      <div class="grid md:grid-cols-3 gap-8 text-left">
-        <div>
-          <h4 class="font-semibold text-xl mb-2">Fast Turnarounds</h4>
-          <p>Launch your site in as little as 7 days.</p>
-        </div>
-        <div>
-          <h4 class="font-semibold text-xl mb-2">Clean, Scalable Code</h4>
-          <p>Modern tech stack: React, Next.js, Tailwind, Node.js & more.</p>
-        </div>
-        <div>
-          <h4 class="font-semibold text-xl mb-2">Reliable Support</h4>
-          <p>Talk to real developers, not robots. We're with you even after launch.</p>
-        </div>
-      </div>
-    </div>
+
+  <section id="contact" class="container">
+    <h2>Contact Us</h2>
+    <form name="contact" method="POST" data-netlify="true">
+      <input type="hidden" name="form-name" value="contact" />
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
   </section>
-  <section class="py-16 px-6">
-    <div class="max-w-4xl mx-auto text-center">
-      <h3 class="text-3xl font-bold mb-6">Demo Portfolio</h3>
-      <div class="grid md:grid-cols-3 gap-6">
-        <div class="bg-white shadow p-4 rounded-xl">
-          <h4 class="font-semibold mb-2">TheRealtyHub</h4>
-          <p>Real estate site with listings and contact form</p>
-        </div>
-        <div class="bg-white shadow p-4 rounded-xl">
-          <h4 class="font-semibold mb-2">FitTrackPro</h4>
-          <p>Fitness coach landing page with booking integration</p>
-        </div>
-        <div class="bg-white shadow p-4 rounded-xl">
-          <h4 class="font-semibold mb-2">CraftBakery</h4>
-          <p>Online bakery site with product catalog and order form</p>
-        </div>
-      </div>
-    </div>
+
+  <section id="subscribe" class="container">
+    <h2>Join Our Newsletter</h2>
+    <form name="subscribe" method="POST" data-netlify="true">
+      <input type="hidden" name="form-name" value="subscribe" />
+      <input type="email" name="email" placeholder="Enter your email" required />
+      <button type="submit">Subscribe</button>
+    </form>
   </section>
-  <section id="contact" class="bg-black text-white py-16 px-6">
-    <div class="max-w-2xl mx-auto text-center">
-      <h3 class="text-3xl font-bold mb-4">Ready to Get Started?</h3>
-      <p class="mb-6">Tell us about your project—we'll take care of the tech.</p>
-      <a href="mailto:support@cntrlcode.pro" class="bg-white text-black px-6 py-3 rounded-xl hover:bg-gray-300">Contact Us</a>
-    </div>
-  </section>
-  <footer class="bg-gray-900 text-gray-300 text-center py-6 text-sm">
-    &copy; <script>document.write(new Date().getFullYear())</script> cntrlcode.pro — All rights reserved.
+
+  <footer>
+    <p>© 2025 cntrlcode.pro. All rights reserved.</p>
   </footer>
 </body>
 </html>
